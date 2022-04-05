@@ -1,5 +1,6 @@
 package com.sikina.bungus.deck;
 
+import com.sikina.bungus.deck.dao.Deck;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

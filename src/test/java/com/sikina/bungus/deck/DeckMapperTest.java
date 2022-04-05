@@ -1,5 +1,7 @@
 package com.sikina.bungus.deck;
 
+import com.sikina.bungus.deck.dao.Card;
+import com.sikina.bungus.deck.dao.Deck;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -58,6 +60,17 @@ class DeckMapperTest {
             new Deck(1, "GUR Wavetron", List.of()),
             new Deck(2, "U Faeries", List.of())
         );
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    void shouldInsertDeck() {
+        Deck toAdd = new Deck(-1, "G Stompy");
+
+        deckMapper.addDeck(toAdd.name());
+        Deck actual = deckMapper.getDeckById(3);
+        Deck expected = new Deck(3, "G Stompy");
 
         Assertions.assertEquals(expected, actual);
     }

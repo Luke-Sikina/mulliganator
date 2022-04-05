@@ -1,5 +1,6 @@
 package com.sikina.bungus.deck;
 
+import com.sikina.bungus.deck.dao.Deck;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;
@@ -16,7 +17,7 @@ public interface DeckMapper {
     @ConstructorArgs({
         @Arg(column = "id", id = true, javaType = int.class),
         @Arg(column = "name", javaType = String.class),
-        @Arg(javaType = List.class, select = "selectCardsForDeck", column = "id"),
+        @Arg(javaType = List.class, select = "com.sikina.bungus.deck.CardMapper.selectCardsForDeck", column = "id"),
     })
     @Select("""
     SELECT
@@ -28,31 +29,6 @@ public interface DeckMapper {
     """)
     public Deck getDeckById(int id);
 
-    @ConstructorArgs({
-        @Arg(column = "id", id = true, javaType = int.class),
-        @Arg(column = "deck_id", id = true, javaType = int.class),
-        @Arg(column = "count", javaType = int.class),
-        @Arg(column = "name", javaType = String.class),
-    })
-    @Select("""
-        SELECT
-            name, count, id, deck_id
-        FROM
-            deck_card
-        WHERE
-            deck_id = #{id}
-        ORDER BY
-            name ASC
-    """)
-    public List<Card> selectCardsForDeck(int id);
-
-    @Select("""
-        SELECT
-            name, count, id, deck_id
-        FROM
-            deck_card
-        WHERE
-            FALSE
-    """)
-    public List<Card> selectNoCards(int id);
+    @Insert(value = "INSERT INTO deck (name) VALUES (#{name})")
+    public void addDeck(String name);
 }
