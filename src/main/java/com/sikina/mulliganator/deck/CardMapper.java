@@ -1,6 +1,6 @@
-package com.sikina.bungus.deck;
+package com.sikina.mulliganator.deck;
 
-import com.sikina.bungus.deck.dao.Card;
+import com.sikina.mulliganator.deck.dao.Card;
 import org.apache.ibatis.annotations.Arg;
 import org.apache.ibatis.annotations.ConstructorArgs;
 import org.apache.ibatis.annotations.Mapper;

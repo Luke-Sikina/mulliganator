@@ -1,4 +1,4 @@
-package com.sikina.bungus.predicate.dao;
+package com.sikina.mulliganator.predicate.dao;
 
 import java.util.List;
 

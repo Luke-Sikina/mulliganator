@@ -1,7 +1,7 @@
-package com.sikina.bungus.simulator;
+package com.sikina.mulliganator.simulator;
 
-import com.sikina.bungus.deck.DeckService;
-import com.sikina.bungus.predicate.dao.PredicateNode;
+import com.sikina.mulliganator.deck.DeckService;
+import com.sikina.mulliganator.predicate.dao.PredicateNode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

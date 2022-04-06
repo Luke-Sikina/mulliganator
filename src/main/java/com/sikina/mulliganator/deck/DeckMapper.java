@@ -1,6 +1,6 @@
-package com.sikina.bungus.deck;
+package com.sikina.mulliganator.deck;
 
-import com.sikina.bungus.deck.dao.Deck;
+import com.sikina.mulliganator.deck.dao.Deck;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;
@@ -17,7 +17,7 @@ public interface DeckMapper {
     @ConstructorArgs({
         @Arg(column = "id", id = true, javaType = int.class),
         @Arg(column = "name", javaType = String.class),
-        @Arg(javaType = List.class, select = "com.sikina.bungus.deck.CardMapper.selectCardsForDeck", column = "id"),
+        @Arg(javaType = List.class, select = "com.sikina.mulliganator.deck.CardMapper.selectCardsForDeck", column = "id"),
     })
     @Select("""
     SELECT

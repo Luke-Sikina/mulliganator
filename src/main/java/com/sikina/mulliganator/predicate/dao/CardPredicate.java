@@ -1,3 +1,3 @@
-package com.sikina.bungus.predicate.dao;
+package com.sikina.mulliganator.predicate.dao;
 
 public sealed interface CardPredicate permits PredicateLeaf, PredicateNode {}

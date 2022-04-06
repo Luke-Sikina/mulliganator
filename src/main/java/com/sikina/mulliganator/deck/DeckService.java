@@ -1,6 +1,6 @@
-package com.sikina.bungus.deck;
+package com.sikina.mulliganator.deck;
 
-import com.sikina.bungus.deck.dao.Deck;
+import com.sikina.mulliganator.deck.dao.Deck;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

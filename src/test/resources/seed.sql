@@ -35,7 +35,7 @@ CREATE TABLE `deck_card` (
 
 LOCK TABLES `deck_card` WRITE;
 /*!40000 ALTER TABLE `deck_card` DISABLE KEYS */;
-INSERT INTO `deck_card` VALUES ('Wavesifter',4,1,1),('Ancient Stirrings',4,2,1),('Crop Rotation',2,4,1),('Expedition Map',4,5,1),('Urza\'s Tower',4,6,1),('Urza\'s Mine',4,7,1),('Urza\'s Power Plant',4,8,1);
+INSERT INTO `deck_card` VALUES ('Wavesifter',4,1,1),('Ancient Stirrings',4,2,1),('Crop Rotation',2,4,1),('Expedition Map',4,5,1),('Urza\'s Tower',4,6,1),('Urza\'s Mine',4,7,1),('Urza\'s Power Plant',4,8,1),('Self-Assembler',4,9,1),('Fangren Marauder',4,10,1),('Maelstrom Colossus',4,11,1),('Chromatic Star',4,12,1),('Chromatic Sphere',4,13,1),('Guild Globe',1,14,1),('Network Terminal',1,15,1),('Fire // Ice',4,16,1),('Forest',5,17,1),('Haunted Fengraf',1,18,1),('Cave of Temptation',2,19,1);
 /*!40000 ALTER TABLE `deck_card` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

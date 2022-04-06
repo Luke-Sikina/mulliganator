@@ -1,9 +1,9 @@
-package com.sikina.bungus.predicate;
+package com.sikina.mulliganator.predicate;
 
-import com.sikina.bungus.predicate.dao.BooleanOperator;
-import com.sikina.bungus.predicate.dao.CardPredicate;
-import com.sikina.bungus.predicate.dao.PredicateLeaf;
-import com.sikina.bungus.predicate.dao.PredicateNode;
+import com.sikina.mulliganator.predicate.dao.BooleanOperator;
+import com.sikina.mulliganator.predicate.dao.CardPredicate;
+import com.sikina.mulliganator.predicate.dao.PredicateLeaf;
+import com.sikina.mulliganator.predicate.dao.PredicateNode;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

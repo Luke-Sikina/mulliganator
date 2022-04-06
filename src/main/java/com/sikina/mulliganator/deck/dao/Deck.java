@@ -1,4 +1,4 @@
-package com.sikina.bungus.deck.dao;
+package com.sikina.mulliganator.deck.dao;
 
 import java.util.List;
 
